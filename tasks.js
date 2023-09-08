@@ -24,5 +24,9 @@ console.log('Дождя нет!'); }
 
 {
     //про банкомат
-
+const moneyIn = 100;
+let res = 0;
+const cashOut = +prompt('Какую сумму желаете снять?');
+isNaN(cashOut) ? console.log('Вы ввели неверные данные') : res = cashOut % moneyIn;
+res == 0 ? console.log('Есть такая сумма') : console.log('Нет такой суммы денег');
 }
